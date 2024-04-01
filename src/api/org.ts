@@ -1,5 +1,5 @@
 import delay from '../utils/delay'
-interface Org {
+export interface Org {
   id: string
   name: string
 }
@@ -19,7 +19,7 @@ const query = (parentId: string = '0') => {
   return delay(getOrgData())
 }
 
-const orgApi = {
+export const orgApi = {
   query,
 }
 
